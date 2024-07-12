@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "clusteringapp"
+version = "0.1.0"
+description = "Separate images in folders based on their simmilarity"
+authors = ["Caio P <caiopss99@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+scikit-learn = "^1.5.0"
+opencv-python-headless = "^4.9.0.80"
+tqdm = "^4.66.4"
+
+
+[tool.poetry.group.dev.dependencies]
+deptry = "^0.16.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
