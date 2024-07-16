@@ -35,7 +35,8 @@ def perform_kmeans(images, folder, n_clusters, batch_size):
 
 if __name__ == "__main__":
     batch_size = 1
-    folder = "/home/ludo/Telegram_Images"
+    # put the absolute filepath of where your images are located
+    folder = "/home/user/images"
     images_generator = load_images(folder, batch_size)
     total_images = sum(1 for _ in os.listdir(folder))
 
